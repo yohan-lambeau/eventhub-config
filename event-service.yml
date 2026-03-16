@@ -19,9 +19,3 @@ info:
     description:  An EventHub microservice responsible for managing events
     version: 1.0.0
     author : Yohan Lambeau
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
