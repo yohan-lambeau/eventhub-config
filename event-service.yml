@@ -15,8 +15,8 @@ spring:
 
 info:
   app:
-    name: event Microservice
-    description: eventhub application
+    name: event-service
+    description:  An EventHub microservice responsible for managing events
     version: 1.0.0
 
 management:
