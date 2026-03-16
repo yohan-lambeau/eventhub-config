@@ -13,6 +13,12 @@ spring:
       ddl-auto: update
     show-sql: true
 
+info:
+  app:
+    name: event Microservice
+    description: eventhub application
+    version: 1.0.0
+
 management:
   endpoints:
     web:
