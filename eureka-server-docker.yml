@@ -7,8 +7,10 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka-server
-
+    hostname : eureka-server
   client:
     register-with-eureka: false
     fetch-registry: false
+    serviceUrl:
+      defaultZone: http://eureka-server:8070/eureka/
+
