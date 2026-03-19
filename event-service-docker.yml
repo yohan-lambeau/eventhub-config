@@ -7,15 +7,22 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-
 info:
   app:
     name: event-service
     description:  An EventHub microservice responsible for managing events
     version: 1.0.0
     author : Yohan Lambeau
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-server:8070/eureka/
