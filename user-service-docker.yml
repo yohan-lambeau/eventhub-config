@@ -16,5 +16,14 @@ spring:
 info:
   app:
     name: user-service
-    description: API Gateway responsible for manage users request
+    description: A microservice responsible for managing users
     version: 1.0.0
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-server:8070/eureka/
