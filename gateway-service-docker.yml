@@ -12,5 +12,14 @@ spring:
 info:
   app:
     name: gateway-service
-    description: API Gateway responsible for routing external requests to EventHub microservices
+    description: a microservice responsible for routing external requests to EventHub microservices
     version: 1.0.0
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-server:8070/eureka
