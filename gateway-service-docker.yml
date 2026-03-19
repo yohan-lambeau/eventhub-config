@@ -23,3 +23,20 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://eureka-server:8070/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
